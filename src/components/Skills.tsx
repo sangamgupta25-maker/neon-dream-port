@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "React / Next", level: 95 },
-  { name: "TypeScript", level: 92 },
-  { name: "Three.js / WebGL", level: 88 },
-  { name: "Node / Bun", level: 85 },
-  { name: "GLSL Shaders", level: 78 },
-  { name: "Rust / WASM", level: 70 },
+  { name: "React, Next & Remix", level: 95, note: "daily driver" },
+  { name: "TypeScript", level: 92, note: "strict, always" },
+  { name: "Design systems & type", level: 90, note: "tokens, scales" },
+  { name: "Node, Bun & Postgres", level: 85, note: "boring is good" },
+  { name: "Three.js & motion", level: 78, note: "used sparingly" },
+  { name: "Writing & editing", level: 82, note: "yes, really" },
 ];
 
 export function Skills() {
@@ -20,13 +20,13 @@ export function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-sm tracking-[0.3em] text-secondary mb-4 uppercase">// 03 — Stack</p>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Technical <span className="text-gradient-neon">arsenal</span>
+          <p className="font-mono-accent text-xs tracking-[0.3em] text-secondary mb-5 uppercase">03 — Craft</p>
+          <h2 className="font-display text-5xl md:text-6xl font-light tracking-tight leading-[1.05]">
+            Tools I reach for <span className="italic text-primary">often</span>.
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-8">
+        <div className="grid md:grid-cols-2 gap-x-20 gap-y-10">
           {skills.map((s, i) => (
             <motion.div
               key={s.name}
@@ -35,17 +35,18 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <div className="flex justify-between mb-3">
-                <span className="text-foreground font-medium">{s.name}</span>
-                <span className="text-muted-foreground text-sm">{s.level}%</span>
+              <div className="flex justify-between items-baseline mb-3">
+                <span className="font-display text-2xl font-normal text-foreground">{s.name}</span>
+                <span className="font-mono-accent text-xs text-muted-foreground">{s.level}%</span>
               </div>
-              <div className="h-1 bg-muted rounded-full overflow-hidden">
+              <div className="font-script text-lg text-secondary mb-3">{s.note}</div>
+              <div className="h-px bg-foreground/10 overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: `${s.level}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.2, delay: 0.2 + i * 0.08, ease: "easeOut" }}
-                  className="h-full bg-gradient-to-r from-primary to-secondary shadow-[0_0_10px_oklch(0.72_0.21_265/0.8)]"
+                  className="h-[2px] -mt-px bg-primary"
                 />
               </div>
             </motion.div>

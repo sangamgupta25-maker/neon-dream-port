@@ -11,9 +11,9 @@ export function About() {
           transition={{ duration: 0.7 }}
           className="md:col-span-5"
         >
-          <p className="text-sm tracking-[0.3em] text-secondary mb-4 uppercase">// 01 — About</p>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Code meets <span className="text-gradient-neon">cosmos</span>
+          <p className="font-mono-accent text-xs tracking-[0.3em] text-secondary mb-5 uppercase">01 — Studio</p>
+          <h2 className="font-display text-5xl md:text-6xl font-light tracking-tight leading-[1.05]">
+            A small studio with a <span className="italic text-primary">long</span> attention span.
           </h2>
         </motion.div>
         <motion.div
@@ -21,25 +21,27 @@ export function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="md:col-span-7 space-y-5 text-muted-foreground text-lg leading-relaxed"
+          className="md:col-span-7 space-y-5 text-foreground/75 text-lg leading-relaxed"
         >
           <p>
-            I'm a developer obsessed with the edges of the web — where physics, shaders,
-            and 3D collide with thoughtful interaction design.
+            I've spent the last six years building interfaces for founders, agencies,
+            and the occasional museum. My work sits at the seam between
+            <span className="underline-wavy"> engineering and editorial design</span>.
           </p>
           <p>
-            For 6+ years I've been shipping production interfaces for startups and studios,
-            blending React, WebGL, and a relentless eye for motion.
+            I care about typography, restraint, and the small frictions that make
+            software feel human. Most projects are quiet on the surface and quite
+            opinionated underneath.
           </p>
           <div className="flex gap-8 pt-4 border-t border-border">
             {[
               { n: "60+", l: "Projects shipped" },
-              { n: "6yr", l: "Experience" },
-              { n: "∞", l: "Cups of coffee" },
+              { n: "6 yr", l: "In practice" },
+              { n: "12", l: "Cities visited" },
             ].map((s) => (
               <div key={s.l}>
-                <div className="text-3xl font-bold text-gradient-neon">{s.n}</div>
-                <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
+                <div className="font-display text-4xl font-medium text-primary">{s.n}</div>
+                <div className="font-mono-accent text-[10px] uppercase tracking-widest text-muted-foreground mt-2">{s.l}</div>
               </div>
             ))}
           </div>
