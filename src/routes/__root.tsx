@@ -29,11 +29,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "NOVA — Futuristic Developer Portfolio" },
-      { name: "description", content: "Full-stack developer crafting immersive 3D web experiences with React, Three.js & WebGL." },
-      { name: "author", content: "NOVA" },
-      { property: "og:title", content: "NOVA — Futuristic Developer Portfolio" },
-      { property: "og:description", content: "Full-stack developer crafting immersive 3D web experiences." },
+      { title: "Atelier Nova — Independent Developer & Designer" },
+      { name: "description", content: "Editorial portfolio of a full-stack developer designing thoughtful, human interfaces for studios and startups." },
+      { name: "author", content: "Atelier Nova" },
+      { property: "og:title", content: "Atelier Nova — Independent Developer & Designer" },
+      { property: "og:description", content: "Editorial portfolio of a full-stack developer designing thoughtful, human interfaces." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -41,7 +41,7 @@ export const Route = createRootRoute({
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" },
       {
         rel: "stylesheet",
         href: appCss,
