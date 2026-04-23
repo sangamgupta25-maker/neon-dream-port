@@ -63,34 +63,35 @@
 
 :root {
   --radius: 0.625rem;
-  /* Futuristic dark theme — neon blue + purple */
-  --background: oklch(0.14 0.03 270);
-  --foreground: oklch(0.97 0.01 260);
-  --card: oklch(0.18 0.04 270 / 0.6);
-  --card-foreground: oklch(0.97 0.01 260);
-  --popover: oklch(0.18 0.04 270);
-  --popover-foreground: oklch(0.97 0.01 260);
-  --primary: oklch(0.72 0.21 265);            /* neon blue */
-  --primary-foreground: oklch(0.12 0.02 270);
-  --secondary: oklch(0.65 0.25 305);          /* neon purple */
-  --secondary-foreground: oklch(0.98 0.01 260);
-  --muted: oklch(0.22 0.04 270);
-  --muted-foreground: oklch(0.72 0.04 270);
-  --accent: oklch(0.65 0.25 305);
-  --accent-foreground: oklch(0.98 0.01 260);
-  --destructive: oklch(0.65 0.25 25);
-  --destructive-foreground: oklch(0.98 0.01 260);
-  --border: oklch(0.72 0.21 265 / 0.25);
-  --input: oklch(0.25 0.05 270);
-  --ring: oklch(0.72 0.21 265);
+  /* Light editorial theme — warm paper, ink, sage & terracotta */
+  --background: oklch(0.985 0.008 85);          /* warm off-white paper */
+  --foreground: oklch(0.20 0.02 60);            /* deep ink */
+  --card: oklch(0.99 0.005 85);
+  --card-foreground: oklch(0.20 0.02 60);
+  --popover: oklch(0.99 0.005 85);
+  --popover-foreground: oklch(0.20 0.02 60);
+  --primary: oklch(0.55 0.14 35);               /* terracotta */
+  --primary-foreground: oklch(0.99 0.005 85);
+  --secondary: oklch(0.48 0.07 165);            /* deep sage */
+  --secondary-foreground: oklch(0.99 0.005 85);
+  --muted: oklch(0.94 0.012 85);
+  --muted-foreground: oklch(0.45 0.02 60);
+  --accent: oklch(0.78 0.13 75);                /* ochre */
+  --accent-foreground: oklch(0.20 0.02 60);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.99 0.005 85);
+  --border: oklch(0.20 0.02 60 / 0.12);
+  --input: oklch(0.20 0.02 60 / 0.15);
+  --ring: oklch(0.55 0.14 35);
 
-  --neon-blue: oklch(0.72 0.21 265);
-  --neon-purple: oklch(0.65 0.25 305);
-  --neon-cyan: oklch(0.85 0.16 220);
-  --gradient-neon: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-  --gradient-radial: radial-gradient(circle at 50% 0%, oklch(0.72 0.21 265 / 0.25), transparent 60%);
-  --shadow-neon: 0 0 30px oklch(0.72 0.21 265 / 0.5), 0 0 60px oklch(0.65 0.25 305 / 0.3);
-  --shadow-neon-strong: 0 0 20px oklch(0.72 0.21 265 / 0.8), 0 0 50px oklch(0.65 0.25 305 / 0.6);
+  --ink: oklch(0.20 0.02 60);
+  --paper: oklch(0.985 0.008 85);
+  --terracotta: oklch(0.55 0.14 35);
+  --sage: oklch(0.48 0.07 165);
+  --ochre: oklch(0.78 0.13 75);
+  --gradient-warm: linear-gradient(135deg, var(--terracotta), var(--ochre));
+  --shadow-soft: 0 1px 2px oklch(0.20 0.02 60 / 0.06), 0 8px 24px oklch(0.20 0.02 60 / 0.08);
+  --shadow-lift: 0 2px 4px oklch(0.20 0.02 60 / 0.06), 0 20px 40px -12px oklch(0.20 0.02 60 / 0.18);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
