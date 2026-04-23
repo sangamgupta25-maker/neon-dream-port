@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { MeshDistortMaterial, Sphere, Float, Stars } from "@react-three/drei";
+import { MeshDistortMaterial, Sphere, Float } from "@react-three/drei";
 import { Suspense, useRef } from "react";
 import type { Mesh } from "three";
 
